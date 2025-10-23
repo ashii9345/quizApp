@@ -12,7 +12,7 @@ function Quiz() {
         },1000)
         return ()=>clearInterval(inter);
     },[])
-    if(time==10){
+    if(time==20){
       setcurret(current+1)
       settime(0);
     }
@@ -25,7 +25,7 @@ function Quiz() {
     let q=question.find((q)=>q.id==current)
     console.log(q)
     if(question.length+1==current){
-        return <p>complete {score}</p>
+        return <p style={{fontSize:"70px"}}>complete score:{score}</p>
     }
     function verify(opt){
        if(opt==q.answer){
@@ -39,7 +39,7 @@ function Quiz() {
 
   return (
     <div>
-        {score}
+       <p> score:{score}</p>
         {time}
         <p>{q.Qustion}</p>
         {q.option.map((opt,idx)=><><button style={{width:"150px", margin:"5px"}}key={idx} onClick={()=>verify(opt)}>{opt}</button><br/></>)}
