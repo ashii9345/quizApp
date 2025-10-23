@@ -1,0 +1,37 @@
+{
+  "Qustions": [
+    {
+      "id": "1",
+      "Qustion": "what is the capital of india",
+      "option": [
+        "delhi",
+        "mumbai",
+        "goa",
+        "kerala"
+      ],
+      "answer": "delhi"
+    },
+    {
+      "id": "2",
+      "Qustion": "what is the capital of france",
+      "option": [
+        "paris",
+        "madrid",
+        "barca",
+        "liverpool"
+      ],
+      "answer": "paris"
+    },
+    {
+      "id": 3,
+      "Qustion": "what is the capital of kerala",
+      "option": [
+        "Malappuram",
+        "Thiruvananthappuram",
+        "Kozhikode",
+        "Kollam"
+      ],
+      "answer": "Thiruvananthappuram"
+    }
+  ]
+}

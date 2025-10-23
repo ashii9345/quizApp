@@ -1,0 +1,15 @@
+.loginCo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.item{
+    text-align: center;
+    width:20%;
+    height: 100%;
+    padding: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
