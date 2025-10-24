@@ -17,7 +17,7 @@ function Quiz() {
       settime(0);
     }
     useEffect(()=>{
-        axios.get("http://localhost:3000/Qustions").then((res)=>setquestion(res.data))
+        axios.get("https://quizapp-2-jho3.onrender.com/Qustions").then((res)=>setquestion(res.data))
     },[])
     if(question.length==0){
         return <p>loading</p>
