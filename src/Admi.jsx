@@ -15,7 +15,7 @@ function Admi() {
          if(question.trim()==""||opt1.trim()==""||opt2.trim()==""||opt3.trim()==""||opt4.trim()==""||answer.trim()==""){
           return
          }
-         axios.post("http://localhost:3000/Qustions",{
+         axios.post("https://quizapp-2-jho3.onrender.com/Qustions",{
             id:count,
             Qustion:question,
             option:[opt1,opt2,opt3,opt4],

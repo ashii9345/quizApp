@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 function Quiz() {
+    let nav=useNavigate()
     let[question,setquestion]=useState([])
     let[current,setcurret]=useState(1)
     let[score,setscore]=useState(0)
@@ -25,7 +26,8 @@ function Quiz() {
     let q=question.find((q)=>q.id==current)
     console.log(q)
     if(question.length+1==current){
-        return <p style={{fontSize:"70px"}}>complete score:{score}</p>
+        return (<><p style={{fontSize:"70px"}}>complete score:{score}</p>
+        <button onClick={()=>window.location.reload()}>reset </button></>)
     }
     function verify(opt){
        if(opt==q.answer){
